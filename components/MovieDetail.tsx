@@ -7,7 +7,7 @@ interface Props {
 
 function MovieDetail({ movie }: Props) {
   return (
-    <div>
+    <div className="movie">
       <h2 className="movie__title">{movie.title}</h2>
       <img
         className="movie__poster"

@@ -15,6 +15,18 @@ interface Props {
 const AppProvider = ({ children }: Props) => {
   const [movies, setMovies] = useState([])
 
+  // set to local storage
+  useEffect(() => {
+    localStorage.setItem('movies', JSON.stringify(movies))
+  }, [movies])
+
+  useEffect(() => {
+    const movies = JSON.parse(localStorage.getItem('movies') || '[]')
+    if (movies) {
+      setMovies(movies)
+    }
+  }, [])
+
   useEffect(() => {
     const getMovies = async () => {
       const response = await fetch(request.fetchTrending)
