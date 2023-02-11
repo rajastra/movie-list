@@ -1,9 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
+import { Layout } from 'antd'
 
-function Header() {
+const { Header } = Layout
+
+function MainHeader() {
   return (
-    <header className="app-bar">
+    <Header className="app-bar">
       <div className="app-bar__brand">
         <h1>Movie Catalogue</h1>
       </div>
@@ -14,8 +17,8 @@ function Header() {
           </li>
         </ul>
       </nav>
-    </header>
+    </Header>
   )
 }
 
-export default Header
+export default MainHeader

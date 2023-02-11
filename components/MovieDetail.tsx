@@ -1,5 +1,6 @@
 import React from 'react'
 import { Movie } from '@/typings'
+import Card from 'antd/es/card'
 
 interface Props {
   movie: Movie
@@ -7,7 +8,7 @@ interface Props {
 
 function MovieDetail({ movie }: Props) {
   return (
-    <div className="movie">
+    <Card className="movie">
       <h2 className="movie__title">{movie.title}</h2>
       <img
         className="movie__poster"
@@ -25,7 +26,7 @@ function MovieDetail({ movie }: Props) {
         <h3>Overview</h3>
         <p>{movie.overview}</p>
       </div>
-    </div>
+    </Card>
   )
 }
 

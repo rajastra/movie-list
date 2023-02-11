@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import MainHeader from '@/components/Header'
 import MainContent from '@/components/MainContent'
 import { AppContext } from '@/context/movie-context'
 import Head from 'next/head'
@@ -18,7 +18,7 @@ function Home() {
         <title>Movie Catalouge</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <MainHeader />
       <main>
         <MainContent movies={movies?.movies} />
       </main>

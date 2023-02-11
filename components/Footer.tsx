@@ -1,16 +1,19 @@
 import React from 'react'
+import { Layout } from 'antd'
 
-function Footer() {
+const { Footer } = Layout
+
+function FooterItem() {
   return (
-    <footer>
+    <Footer>
       <p>
         All data obtained from{' '}
         <a href="https://themoviedb.org" target="_blank" rel="noreferrer">
           TheMovieDB
         </a>
       </p>
-    </footer>
+    </Footer>
   )
 }
 
-export default Footer
+export default FooterItem

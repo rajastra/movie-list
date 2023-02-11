@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import MainHeader from '@/components/Header'
 import MovieDetail from '@/components/MovieDetail'
 import { AppContext } from '@/context/movie-context'
 import { Movie } from '@/typings'
@@ -31,7 +31,7 @@ function Detail() {
         <title>Detail Movie</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <MainHeader />
       <main>
         <MovieDetail movie={movie} />
       </main>

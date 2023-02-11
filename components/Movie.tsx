@@ -1,4 +1,5 @@
 import { Movie } from '@/typings'
+import { Card } from 'antd'
 import Link from 'next/link'
 import React from 'react'
 
@@ -8,7 +9,7 @@ interface Props {
 
 function MovieItem({ movie }: Props) {
   return (
-    <div className="movie-item">
+    <Card className="movie-item">
       <div className="movie-item__header">
         <img
           className="movie-item__header__poster"
@@ -40,7 +41,7 @@ function MovieItem({ movie }: Props) {
         </h3>
         <p>{movie.overview}</p>
       </div>
-    </div>
+    </Card>
   )
 }
 
