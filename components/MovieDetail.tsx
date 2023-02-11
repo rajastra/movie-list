@@ -1,6 +1,6 @@
 import React from 'react'
 import { Movie } from '@/typings'
-import Card from 'antd/es/card'
+import { Card } from 'antd'
 
 interface Props {
   movie: Movie

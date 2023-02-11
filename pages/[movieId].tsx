@@ -1,4 +1,4 @@
-import Footer from '@/components/Footer'
+import FooterItem from '@/components/Footer'
 import MainHeader from '@/components/Header'
 import MovieDetail from '@/components/MovieDetail'
 import { AppContext } from '@/context/movie-context'
@@ -35,7 +35,7 @@ function Detail() {
       <main>
         <MovieDetail movie={movie} />
       </main>
-      <Footer />
+      <FooterItem />
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import Footer from '@/components/Footer'
+import FooterItem from '@/components/Footer'
 import MainHeader from '@/components/Header'
 import MainContent from '@/components/MainContent'
 import { AppContext } from '@/context/movie-context'
@@ -22,7 +22,7 @@ function Home() {
       <main>
         <MainContent movies={movies?.movies} />
       </main>
-      <Footer />
+      <FooterItem />
     </div>
   )
 }
