@@ -27,6 +27,14 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width: 25em) {
+  .app-bar {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+  }
+}
+
 .app-bar .app-bar__menu {
   display: flex;
   align-items: center;
